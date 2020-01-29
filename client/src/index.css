@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.mainFirst {
+    background-image: url(./img/sarajevo.jpg);
+    background-size: cover;
+    height: 500px;
+    padding-top: 10%;
+}
+
+.shuttle {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mainSecond {
+    text-align: center;
+    padding: 5%;
+    border-bottom: 1px solid #CCCDCF;
+}
+
+.mainThird {
+    text-align: center;
+}
+
+h2 {
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.box {
+    border: 2px solid #CCCDCF;
+    border-radius: 5%;
+    padding: 5%;
+    margin: 1%;
+    background-color: #dee2e6;
+}
+
+.row {
+    padding: 1%;
+}
+
+.img2 {
+    height: 4em;
+    width: 8em;
+}
+
+.img-3 {
+    height: 8em;
+    width: 12em;
+}
+
+.footer {
+    background-color: #343A40;
+    color: white;
+    text-align: center;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 1px solid #CCCDCF;
+    height: 5em;
+    width: 5em;
+    margin: 0 auto;
+}
+
+.a {
+    background-color: #3a88db;
+}
+
+.b {
+    background-color: #3a88db;
+}
+
+.c {
+    background-color: #3a88db;
+}
+
+i {
+    color: white;
+    margin-top: 0.7em;
+}
+
+.transfer {
+    margin: 5% 0 5% 0;
+}
+
+.text {
+    text-align: center;
+    margin: 5%;
+}
+
+.info {
+    border-top: 1px solid #CCCDCF;
+    margin: 5%;
+}
+
+    .info h5 {
+        margin-top: 5%;
+    }
+
+.text-airport, .text-rent, .text-transfer {
+    text-align: center;
+    padding: 5%;
+    color: white;
+    z-index: 1;
+    position: relative;
+    background-color: #3a88db;
+}
+
+.successField {
+    background-color: #3a88db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: -webkit-fill-available;
+}
+
+.text-airport .bg {
+    position: absolute;
+    background-image: url(./img/airport.jpg);
+    opacity: 0.3;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    .text-rent .bg {
+        position: absolute;
+        background-image: url(./img/rent.png);
+        opacity: 0.3;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-transfer .bg {
+        position: absolute;
+        background-image: url(./img/transfer.jpg);
+        opacity: 0.3;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.contactsNames, .transfersName, .rentName, .airportName {
+    display: flex;
+    margin: 20px;
+}
+
+.contactsFirstName, .transfersFirstName, .rentFirstName, .airportFirstName {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+
+.contactsLastName, .transfersLastName, .rentLastName, .airportLastName {
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+.contactsInput, .transfersInput, .rentInputs, .airpotInputs {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contacts label, .transfersForm label, .rent label, .airport label {
+    font-weight: bold;
+}
+
+.errorMsg {
+    color: red;  
+}
+
+.contactsText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+    color: white;
+    background-color: #3a88db;
+}
+
+.contactsHeader{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.contactsMain {
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #e9e9e9;
+}
+
+.contactsMain a {
+    color: white;
+}
+
+.airport .errorMsg, .transfers .errorMsg, .rent .errorMsg{
+    margin-left: 20px;
+}
+
+.mainSpecial {
+    background-color: #3a88db;
+}
+
+.boxSpecial {
+    border: 2px solid #CCCDCF;
+    border-radius: 5%;
+    background-color: #dee2e6;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .boxSpecial p {
+        color: #3a88db;
+        font-weight: bold;
+    }
+
+.mainSpecialHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.mainSpecialHeader h2{
+    color: white;
+    /*font-weight: bold;*/
+}
+
+.ui-widget-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(90, 90, 90, 0.1);
+    z-index: 2;
+}
+
+.detailsPopup {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #E9E9E9;
+    z-index: 3;
+    border: 1px solid #a1a1a1;
+    border-radius: 7px;
+}
+
+.detailsHeader {
+    margin-left: 1em;
+    margin-top: 1em;
+    font-weight: bold;
+    color: #3a88db;
+}
+
+.detailsMain {
+    background-color: white;
+    margin: 1em;
+    border-radius: 7px;
+    font-size: 1em;
+    max-height: 75%;
+    overflow: auto;
+}
+
+.detailsDetails {
+    border: 2px solid #E9E9E9;
+    border-radius: 7px;
+    color: #3a88db;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.detailsPictures {
+    border: 2px solid #E9E9E9;
+    border-radius: 7px;
+    color: #3a88db;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.detailsBtns {
+    margin-top: 1em;
+}
+    .detailsBtns button{
+        margin-left: 1em;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+div.row.rentInputs div.col-sm {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.boxSpecialBtns{
+    margin: 0.5em;
+}
+
+div.row.rentInputs{
+    padding: 0;
+}
+
+.react-notification-root .notification-container-top-center {
+    top: 40%;
+}
+
+.detailsBtns a {
+    color: white;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
