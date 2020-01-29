@@ -1,9 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-const keys = require('./keys/dev');
+//const keys = require('./keys/dev'); for dev
 const app = express();
 
+const keys = {
+	user: process.env.USER,
+	pass: process.env.PASSWORD
+};
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
