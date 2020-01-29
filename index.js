@@ -8,6 +8,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+
+
 app.post('/contacts/form', (req, res) => {
 	nodemailer.createTestAccount((err, account) => {
 		const htmlEmail = `
@@ -27,8 +29,8 @@ app.post('/contacts/form', (req, res) => {
 			port: 587,
 			tls: { rejectUnauthorized: false },
 			auth: {
-				user: keys.email,
-				pass: keys.password
+				user: process.env.NODE_ENV === 'production' ? process.env.USER : keys.email,
+				pass: process.env.NODE_ENV === 'production' ? process.env.PASSWORD : keys.password
 			}
 		})
 
@@ -75,8 +77,8 @@ app.post('/shuttle/form', (req, res) => {
 			port: 587,
 			tls: { rejectUnauthorized: false },
 			auth: {
-				user: keys.email,
-				pass: keys.password
+				user: process.env.NODE_ENV === 'production' ? process.env.USER : keys.email,
+				pass: process.env.NODE_ENV === 'production' ? process.env.PASSWORD : keys.password
 			}
 		})
 
@@ -123,8 +125,8 @@ app.post('/rent/form', (req, res) => {
 			port: 587,
 			tls: { rejectUnauthorized: false },
 			auth: {
-				user: keys.email,
-				pass: keys.password
+				user: process.env.NODE_ENV === 'production' ? process.env.USER : keys.email,
+				pass: process.env.NODE_ENV === 'production' ? process.env.PASSWORD : keys.password
 			}
 		})
 
